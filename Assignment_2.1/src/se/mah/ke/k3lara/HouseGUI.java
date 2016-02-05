@@ -9,8 +9,10 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import java.awt.Font;
-import javax.swing.DropMode;
+import java.util.ArrayList;
 
+import javax.swing.DropMode;
+import java.util.Random;
 public class HouseGUI extends JFrame {
 
 	private JPanel contentPane;
@@ -18,7 +20,8 @@ public class HouseGUI extends JFrame {
 	private House house;
 	private House house2;
 	private House house3;
-
+	private ArrayList<House> myHouseList = new ArrayList<House>();
+    private Random rand = new Random();
 	/**
 	 * Launch the application.
 	 */
@@ -98,6 +101,16 @@ public class HouseGUI extends JFrame {
 		for(int i = 0; i < 10; i++){
 			textArea.append(("\n"+ "#" +(+i+1) + "\n") + "This house is this many kvm: " + String.valueOf(houses[i].getSize())+ "\n" + ("This house is built this year: " + String.valueOf(houses[i].getYearBuilt())));
 			
-		}
+		} 
+		textArea.append("\n"+ "Uppgift 1.4" + "\n");
+		for(int i = 0; i < 100; i++){
+			myHouseList.add(new House(rand.nextInt(2015), rand.nextInt(1000)));
+			
+		
+		} 
+		for(House house : myHouseList){
+		System.out.println("yearBuilt: " + house.getYearBuilt() + " houseSize: " + house.getSize());
+		textArea.append("yearBuilt: " + house.getYearBuilt() +"\n" + " houseSize: " + house.getSize());
 	}
+}
 }
