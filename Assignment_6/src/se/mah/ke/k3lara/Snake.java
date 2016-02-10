@@ -4,7 +4,7 @@ public class Snake extends Animal{
 	
 	private Boolean poison = true;
 	
-	
+	/** The constuctor inherits initializers from the abstract animal class. */
 	public Snake(String friendlyName, Boolean poison, String latinName){
 		super(latinName, friendlyName);
 		this.poison = poison;
@@ -13,7 +13,11 @@ public class Snake extends Animal{
 	public Boolean IsPoison(){
 		return poison;
 	}
-
+	/**
+	 * This method is connected with the abstract method from the animal-class.
+	 * The override instructs the compiler to override the method in the
+	 * superclass. The boolean is set to true if the snake is poisonous, else -..-
+	 */
 	@Override
 	public String GetInfo() {
 		String info;
