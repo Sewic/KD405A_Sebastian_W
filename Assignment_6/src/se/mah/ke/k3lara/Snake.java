@@ -5,8 +5,8 @@ public class Snake extends Animal{
 	private Boolean poison = true;
 	
 	
-	public Snake(Boolean poison, String latinName){
-		super(latinName);
+	public Snake(String friendlyName, Boolean poison, String latinName){
+		super(latinName, friendlyName);
 		this.poison = poison;
 	}
 	
@@ -18,9 +18,9 @@ public class Snake extends Animal{
 	public String GetInfo() {
 		String info;
 		if(poison == true){
-		info = "The Snake has the latinname: " + latinName + " and is " + "very deadly with its poison"+ "\n";
+		info = "The Snake: " + friendlyName + " has the latinname: " + latinName + " and is " + "very deadly with its poison."+ "\n";
 		} else {
-			info = "The Snake has the latinname: " + latinName + " and is " + "is not lethal with its poison"+ "\n";
+			info = "The Snake: " + friendlyName + " has the latinname: " + latinName + " and is " + "is not lethal with its poison."+ "\n";
 		}
 		return info;
 	}

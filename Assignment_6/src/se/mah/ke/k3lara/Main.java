@@ -54,13 +54,13 @@ public class Main extends JFrame {
 		contentPane.setLayout(null);
 		
 		
-		myAnimals.add(new Dog(32, "Dogus Dogusir", false, "Gubben"));
-		myAnimals.add(new Cat(7, "Catus Catilis", 13));
-		myAnimals.add(new Snake(true, "Snakus Snakili"));
-		myAnimals.add(new Dog(7, "Dogus Dogusir", true, "Flubber"));
-		myAnimals.add(new Snake(false, "Snakus Snakili"));
-		myAnimals.add(new Cat(3, "Catus Catilis", 15));
-		myAnimals.add(new Dog(12, "Dogus Dogusir", false, "Kraken"));
+		myAnimals.add(new Dog("'Orven'", 32, "'Dogus Dogusir'", false));
+		myAnimals.add(new Cat("'Blomman'", 7, "'Catus Catilis'", 13));
+		myAnimals.add(new Snake("'Slingran'", true, "'Snakus Snakili'"));
+		myAnimals.add(new Dog("'Buster'", 7, "'Dogus Dogusir'", true));
+		myAnimals.add(new Snake("'Sven'", false, "'Snakus Snakili'"));
+		myAnimals.add(new Cat("'Alessa'", 3, "'Catus Catilis'", 15));
+		myAnimals.add(new Dog("'Mörten'", 12, "'Dogus Dogusir'", false));
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(32, 101, 512, 279);

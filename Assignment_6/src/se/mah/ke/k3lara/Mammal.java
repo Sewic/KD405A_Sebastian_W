@@ -5,8 +5,8 @@ public abstract class Mammal extends Animal {
 	protected int gestationTime = 0;
 	
 	
-	public Mammal(int gestationTime, String latinName){
-		super(latinName);
+	public Mammal(int gestationTime, String latinName, String friendlyName){
+		super(latinName, friendlyName);
 		this.gestationTime = gestationTime;
 		
 	

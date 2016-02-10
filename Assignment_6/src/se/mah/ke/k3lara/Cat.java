@@ -8,9 +8,9 @@ public class Cat extends Mammal {
 	private int numberOfLife = 0;
 	
 	
-	public Cat(int gestationTime, String latinName, int numberOfLife) {
+	public Cat( String friendlyName, int gestationTime, String latinName, int numberOfLife) {
 		
-		super(gestationTime, latinName);
+		super(gestationTime, latinName, friendlyName);
 		
 		this.setNumberOfLife(numberOfLife);
 		// TODO Auto-generated constructor stub
@@ -32,7 +32,7 @@ public class Cat extends Mammal {
 		
       String info;
 		
-		info = "The cat: " + ". Latinname: " + latinName + ". Nurses for " + gestationTime + " months and has " + numberOfLife +" lives." + "\n";
+		info = "The cat: " + friendlyName + ". Latinname: " + latinName + ". Nurses for " + gestationTime + " months and has " + numberOfLife +" lives." + "\n";
 		
 		return info;
 	}

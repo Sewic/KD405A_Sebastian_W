@@ -4,16 +4,12 @@ public class Dog extends Mammal {
 
 	private Boolean stupid = true;
 
-	public Dog(int gestationTime, String latinName, Boolean stupid) {
-		super(gestationTime, latinName);
-		this.stupid = stupid;
-		// TODO Auto-generated constructor stub
-	}
+	
 
-	public Dog(int gestationTime, String latinName, Boolean stupid, String friendlyName) {
+	public Dog (String friendlyName, int gestationTime, String latinName, Boolean stupid) {
 
-		super(gestationTime, latinName);
-		super.getFriendlyName();
+		super(gestationTime, latinName, friendlyName);
+		
 
 		this.stupid = stupid;
 
@@ -28,11 +24,11 @@ public class Dog extends Mammal {
 	public String GetInfo() {
 		String info;
 		if (stupid == true) {
-			info = "The dog: " + getFriendlyName() + ". Latinname: " + latinName + ". Nurses for " + gestationTime
+			info = "The dog: " + friendlyName + ". Latinname: " + latinName + ". Nurses for " + gestationTime
 					+ " months and is very stupid."+ "\n";
 			
 		} else{
-			info = "The dog: " + getFriendlyName() + ". Latinname: " + latinName + ". Nurses for " + gestationTime
+			info = "The dog: " + friendlyName + ". Latinname: " + latinName + ". Nurses for " + gestationTime
 					+ " months and is smart."+ "\n";
 			
 		}

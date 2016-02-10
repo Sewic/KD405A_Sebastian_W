@@ -13,9 +13,10 @@ public abstract class Animal {
 	
 	
 	
-	public Animal(String latinName){
+	public Animal(String latinName, String friendlyName){
 		
 		this.latinName = latinName;
+		this.friendlyName = friendlyName;
 	}
 	
 	
